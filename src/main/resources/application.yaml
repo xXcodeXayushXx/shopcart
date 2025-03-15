@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ShopCart
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecom
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8000
